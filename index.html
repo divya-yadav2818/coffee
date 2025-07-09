@@ -1,191 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="latte-art.png">
-  <title>The Coffee Club</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fff;
-      color: #4e2e1e;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="latte-art.png">
+    <title>The coffee club</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding:0;
     }
-    .header {
-      background: #4e2e1e;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 44px;
+    a{
+        font-size:22px;
+        text-decoration: none;
+        color: brown;
+        
     }
-    .logo-area {
-      display: flex;
-      align-items: center;
+    a:hover{
+        font-size:26px;
+        background-color: black;
+        color: chocolate;
+        border-radius: 8px;
+
     }
-    .logo-area img {
-      width: 48px;
-      height: 48px;
-      margin-right: 14px;
+    #header{
+     position: fixed;
+     background-color: rgba(255, 255, 255, 0.644);
+     width:100%;
+     padding:15px;
+     border: 1px solid black;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+
     }
-    .logo-area span {
-      font-size: 40px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      color: #ff9800;
+    #second{
+        background-image: url("coffee bg.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
     }
-    .first {
-      display: flex;
-      font-size: 45px;
-      justify-content: space-between;
-      align-items: center;
+    button:hover{
+        
+        cursor: pointer;
+        background-color: orangered;  
+
     }
-    .first button {
-      background: #4e2e1e;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 30px;
-      cursor: pointer;
+    #third{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
      
     }
-    .first button:hover {
-      background: #ff9800;
-      color: #4e2e1e;
-     font-size: 35px;
-    }
-    /* Coffee background section */
-    .coffee-bg {
-      height: 1200px;
-      background: url('coffee bg.webp') center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color:  black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+   #fourth{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+   }
+    #fifth{
+            width: 100%;
+            height: 800px;
+            background-image: url("texture.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 30px;
+        }
+
+        #fifth-child1{
+           
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        #fifth-child2{
+            width: 95%;
+            border-radius: 15px;
+        
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #sixth{
+            width: 100%;
+            height: 700px;
+            background-image: url('coffee circle.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #seventh{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 100px;
+            
+        }
+
+         #eight1{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+             width: 100%;
+            height: 800px;
+            background-image: url("texture.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+         }
+         #nine-child1:hover{
+            cursor: pointer;
+           
+
+
+         }
+
+        #footer{
+            color: white;
+            width: 100%;
+            height: 200px;
+            background-color: #3B2F2F;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
 
     
-    /* White section */
-    .white-section {
-      height: 600px;
-      background: #fff;
-      color: #4e2e1e;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
 
-    
-
-  </style>
-</head>
+</style>
 <body>
-  <!-- HEADER -->
-  <div class="header">
-    <div class="logo-area">
-      <img src="latte-art.png" alt="Coffee Club Logo">
-      <span>The Coffee Club</span>
-    </div>
-    <div class="first">
-      <a href="#"><button>Home</button></a>
-      <a href="#"><button>About</button></a>
-      <a href="#"><button>Menu</button></a>
-      <a href="#"><button>Blog</button></a>
-      <a href="#"><button>Contact</button></a>
-      <img src="search.png" width="30px" style="color: white;">
-      <img src="menu.png" width="30px" style="color: white; margin-left: 45px; margin-right: 20px;">
+     <header>
+        <div id="header">
+            <div>
+            <div style="display: flex; justify-content: space-between; ">
+             <img src="latte-art.png" width="50px" height="50px" style="margin-top: 15px;">
+                <span><h1>THE COFFEE CLUB</h1></span>
+                </div>
+            </div>
+            <div id="pages">
+              <a href="#"style="margin-right: 50px;">Home</a>
+              <a href="#" style="margin-right: 50px;">Shop</a>
+              <a href="#" style="margin-right: 50px;">About</a>
+              <a href="#" style="margin-right: 50px;">Contact</a>
+              <img src="search.png" width="30px"style="margin-right: 50px;" >
+              <img src="menu.png" width="30px" style="margin-right: 50px;">
+            </div>
+        </div>
+     </header> 
+     <div id="second">
+        <div style="display: flex; align-items: center; flex-direction: column; justify-content: space-around;" >
+            <div style="width: 60%; justify-content: center; margin-right: 200px;">
+          <h1 style="font-size: 50px; color: red;"><b>Coffee Club:</b> Brewing Moments, One Cup at a Time</h1></div>
+        <div style="display: flex; justify-content: center;">
+           <button style="padding: 15px 15px; color: brown; font-size: 22px;margin-right: 700px;  align-items: center;">Order Now</button>
+        </div>
+        <div><h3 style="font-style: italic; color: yellow ;width: 50%; margin-right: 100px;">"More than just coffee, it's a place to belong. Come to Coffee Club and discover your new favorite gathering spot."</h3>
+        </div>
+        </div>
+     </div>
+
+     <div id="third">
+        <div style="display: flex; align-items: center; flex-direction: column;">
+        <center><h1 style="font-size: 50px; font-style: italic; ">
+        <u>   Our Delicious Offer</u></center>
+        </h1>
+        <h3 style="color: brown; width: 75%; margin-left: 170px; justify-content: center;"><b style="color: black; ">Indulge in Coffee Club's irresistible offer:</b> savor expertly crafted, rich-flavored coffees paired with fresh, delightful pastries. Whether you crave a bold espresso or a creamy latte, our premium blends and cozy ambiance promise a perfect treat. >Join us and experience delicious moments that brighten your day!</h3>
+        </div>
+     </div>
+<br><br>
 
 
-      
-    </div>
-  </div>
+        <div id="fourth">
+             <div id="types" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <img src="type of coffee.png">
+                <h1>Types of coffee</h1>
+                <p style="color:black; text-align: center;  font-size: 13px;"><b>The foundation of many coffee drinks is espresso, a concentrated coffee brewed by forcing hot water through finely ground beans. </b> </p>
+             </div>
+              <div id="types" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <img src="bean varities.png">
+                <h1>Bean Varities</h1>
+                <p  style="color:black; text-align: center; font-size: 13px;"><b>Coffee beans are broadly categorized into four main types: Arabica, Robusta, Excelsa, and Liberica, each with distinct characteristics and flavor profiles.</b></p>
+             </div>
+              <div id="types" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <img src="coffee pastry.png">
+                <h1>Coffee & Pastry</h1>
+                <p  style="color:black; text-align: center; font-size: 13px;"><b>Coffee and pastries are often paired together, offering a balanced and satisfying taste experience due to their complementary flavors and textures</b> </p>
+             </div>
+              <div id="types" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <img src="coffee to go.png">
+                <h1>Coffee To Go</h1>
+                <p  style="color:black; text-align: center; font-size: 13px;"><b>Coffee to go refers to coffee prepared and packaged for convenient, quick consumption outside the café, ideal for busy customers on the move.</b> </p>
+             </div>
+        </div>
+<br><br><br><br>
 
-  <!-- SECTION 1: COFFEE BACKGROUND -->
-  <div class="coffee-bg">
-    <h1 style="font-size: 80px; font-family: Arial, Helvetica, sans-serif;">Welcome to The Coffee Club</h1>
-    <p style="font-size: 30px; color: red; font-weight: bold; width: 800px;">
-     "Experience rich, handcrafted coffee and warm hospitality that fuels your day and delights your senses at The Coffee Club."
 
-
-    </p>
-  </div>
-
-  <!-- SECTION 2: WHITE -->
-   <section id="about" style="background-color: #fffbe7; padding:20px;">
-   <div style="height: 600px; border: 2px solid black;">
-  <div class="white-section" >
-    <h2 style="color:#5D3A00" >About Us</h2>
-<p style="color:#333; font-size: 18px;">
-Welcome to <strong>The Coffee Club</strong>- Where every sip is paired with something special. <br>
-   Born out of love for good coffee and heart felt conenctions, our cafe brings together rich brews and delightful bites in a cozy corner of the city.</p>
-   <h3> Every  cup comes with a side - a cookie, a smile, or a new memory.</h3>
-  
- 
-    
-      </div>
-      </section>
-  <!-- SECTION 3: COFFEE BACKGROUND -->
-  <section id="coffee-gallery" style="background-color: #fefefe; padding: 40px; justify-content: space-between;">
-  <h2 style="text-align: center; color: #5D3A00; font-size: 32px;"><u>Coffee Moments</u></h2>
-  <p style="text-align: center; color: #555; font-size: 18px; margin-bottom: 30px;">
-  <b>  Explore our coffee vibes, from solo sips to shared smiles.</b>
-  </p>
-
-  <div style="display: flex; justify-content: space-between ; gap: 20px;">
-    
-    <!-- Card 1 -->
-    <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
-      <img src="prep.jpeg"
-           alt="Classic Coffee" style="width: 100%; height: 180px; object-fit: cover;">
-      <div style="padding: 15px;">
-        <h3 style="margin-top: 0; color: #5D3A00; font-style: italic;">Classic Coffee</h3>
-        <p style="color: #333;"><b>Brewed to perfection with love and passion.</b></p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; ">
-      <img src="istock-80139637people.avif" 
-           alt="Coffee with Friends" style="width: 100%; height: 180px; object-fit: cover;">
-      <div style="padding: 15px;">
-        <h3 style="margin-top: 0; color: #5D3A00;  font-style: italic;">Coffee with Friends</h3>
-        <p style="color: #333;"><b>Moments shared over mugs and memories.</b></p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px #ccc;">
-      <img src="cof.jpg" 
-           alt="Latte Love" style="width: 100%; height: 180px; object-fit: cover;">
-      <div style="padding: 15px;">
-        <h3 style="margin-top: 0; color: #5D3A00; font-style: italic;">Latte Love</h3>
-        <p style="color: #333;"><b>Artful lattes for cozy, creative hearts.</b></p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px #ccc;">
-      <img src="outdoor.jpeg" 
-           alt="Outdoor Sips" style="width: 100%; height: 180px; object-fit: cover;">
-      <div style="padding: 15px;">
-        <h3 style="margin-top: 0; color: #5D3A00;">Outdoor Sips</h3>
-        <p style="color: #333;">Fresh air, fresh coffee — the perfect pair.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section id="coffee-club"
+       <section id="coffee-club"
 style="background-color: #5D3A00; height: 600px; color: white; padding: 40px;">
-  <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;">☕ Coffee Club Collection</h2>
+  <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;"><img src="latte-art.png" width="30px"> Coffee Club Collection</h2>
   <p style="text-align: center; font-size: 18px; max-width: 800px; margin: 0 auto 40px;">
     Discover our exclusive range of premium coffee types and partner brands that are part of the Coffee with Side Club.
   </p>
@@ -195,7 +223,7 @@ style="background-color: #5D3A00; height: 600px; color: white; padding: 40px;">
     <!-- Type of Coffee 1 -->
     <div style="width: 250px; background-color: #7A4C00; border-radius: 12px; padding: 20px; text-align: center;">
       <h3>Espresso</h3>
-      <p>Strong and bold – the heart of all coffee.</p>
+      <p>Strong and bold - the heart of all coffee.</p>
     </div>
 
     <!-- Type of Coffee 2 -->
@@ -215,25 +243,203 @@ style="background-color: #5D3A00; height: 600px; color: white; padding: 40px;">
     <div style="width: 100%; margin-top: 40px; text-align: center; ">
      <h3 style="font-size: 24px;">Featured Brands</h3>
       <p style="font-size: 18px;">
-        Lavazza • Blue Tokai • Starbucks • Nescafé • Third Wave Coffee • Country Bean • Bru Gold
+        Lavazza - Blue Tokai - Starbucks - Nescafe - Third Wave Coffee - Country Bean - Bru Gold
       </p>
       </div> 
       </center>
-    
-
-  </div>
 </section>
+ 
+      
+        <div id="fifth">
+            <div id="fifth-child1" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <h1 style="font-size: 55px; color: crimson;">THE COFFEE HERALD</h1>
+                <p style=" align-items: center; width: 65%;"><b>The term "Coffee Herald" does not specifically refer to a single well-known entity, but based on the search results, it appears connected to coffee-related content featured in publications like the Herald Goa</b></p>
+            </div>
 
-  <!-- SECTION 4: WHITE -->
+            <div id="fifth-child2">
+                <div id="fifth-child2-child1" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="prep.jpeg" width="300">
+                    <h1>Prep Techniques</h1>
+                    <p style="width: 65%; text-align: center;">Coffee preparation techniques vary widely, each offering distinct flavors and experiences. Pour-over is a popular manual method that uses a cone and filter,</p>
+                    <a href="#">-Read More</a>
+                </div>
+
+                <div id="fifth-child2-child2" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="istock-80139637people.avif" width="300">
+                    <h1>French Press</h1>
+                    <p style="width: 65%; text-align: center;">French press is a full-immersion technique where coarsely ground coffee is steeped in hot water before being separated by pressing down a plunger, producing a rich, full-bodied brew</p>
+                    <a href="#">-Read More</a>
+                </div>
+
+                <div id="fifth-child2-child3" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="outdoor.jpeg" width="300">
+                    <h1>Prep Techniques</h1>
+                    <p style="width: 65%; text-align: center;">Cold brew involves soaking coarse grounds in cold or room-temperature water for 12–20 hours, yielding a smooth, naturally sweet coffee with low acidity</p>
+                    <a href="#">-Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="sixth">
+           
+            <div>
+          <img src="circle-removebg-preview.png" style="border-radius: 20px; justify-content: center;"></div>
+        
+    </div>
+
+
+    <div id="seventh">
+        <div id="seven1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: #5D3A00;">
+          <h1 style="font-size: 60px;">250</h1>
+          <h2>Varieties of Coffee</h2>
+          <p style="width: 65%; text-align: center;"> There are also many hybrids and natural mutations such as Catimor, Castillo, and Timor, developed to improve yield and resistance to diseases like coffee leaf rust. </p>
+        </div>
+
+        <div id="seven2" style="display: flex; flex-direction: column; align-items: center; justify-content: center;color: #5D3A00;">
+        <h1 style="font-size: 60px;">123</h1>
+        <h2>
+            Hours of Testing
+        </h2>
+        <p style="width: 65%; text-align: center;"> French press, the actual brewing or extraction time typically ranges from 4 to 6 minutes. Espresso machines are tested for much shorter extraction times, usually around 25–45 second</p>
+        </div>
+
+        <div id="seven3" style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: #5D3A00;">
+         <h1 style="font-size: 60px;">321</h1>
+         <h2>Coffee Markets</h2>
+         <p style="width: 65%; text-align: center;"> In 2025, the market size is projected to reach around $256 billion, with expectations to grow to approximately $381 billion by 2034</p>
+        </div>
+
+        <div id="seven4"style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: #5D3A00;">
+          <h1 style="font-size: 60px;">220</h1>
+          <h2>Coffee Brands</h2>
+          <p style="width: 65%; text-align: center;"> Starbucks is known for its strong focus on sustainability and ethical sourcing, which resonates with consumers worldwide.</p>
+        </div>
+    </div>
+
+
+
+     <div id="eight">
+        
+           <div style="display: flex; align-items: center; flex-direction: column; background-color: brown;">
+
+        <center><h1 style="font-size: 50px; font-style: italic; ">
+        <u>   ONLINE COFFEE SHOP</u></h1></center>
+        
+                <p style=" align-items: center; width: 65%;"><b>By focusing on quality, sustainability, and customer experience—both in your products and your website content—you can build a loyal community and thrive in the competitive coffee industry.</b></p>
+            </div>
+            
+     <div id="eight1">
+            
+                <div id="eight-child2-child1" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="product-img-1.png" width="200px">
+                    <h1>Ethiopia Coffee</h1>
+                    <p style="width: 40%; text-align: center;">$25.00</p>
+                  
+                </div>
+
+                <div id="eight-child2-child2" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <img src="product2.png"  width="200px">
+                    <h1>Kenya Coffee</h1>
+                    <p style="width: 40%; text-align: center;">$21.00</p>
+                    
+                </div>
+
+                <div id="eight-child2-child3" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <img src="product-img-3.png"  width="200px">
+                    <h1>Columbia Coffee</h1>
+                    <p style="width: 40%; text-align: center;">$18.00</p>
+                   
+</div>
+                     <div id="eight-child2-child4" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <img src="product-img-4.png"  width="200px">
+                    <h1>Guatemala Coffee</h1>
+                    <p style="width: 40%; text-align: center;">$15.00</p>
+                    
+                </div>
+            </div>
+     </div>
+       
+
+
+     <div id="nine" style="width: 100%; height: 1100px;">
+        <div style="display: flex; align-items: center; flex-direction: column; background-color: rgb(33, 47, 48);">
+        <center><h1 style="font-size: 50px; font-style: italic; ">
+        <u>Our Sweet Gallery</u>  </h1></center>
+          <p style=" align-items: center; width: 65%;"><b>Coffee shop website can be described as a charming and inviting space where customers can indulge in a delightful selection of European-style cakes, pastries, and specialty coffee. </b></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="main1">
+            <div id="main-child1" style="display: flex; justify-content: space-evenly;">
+                <div>
+                     <img src="cus2.jpeg" width="350px" height="400">
+                </div>
+                <div>
+                     <img src="many cof cup.jpg" width="350px" height="400px">
+                </div>
+            <div>
+                 <img src="heart cof.jpeg" width="350px" height="400px">
+            </div>
+                 <div>
+                     <img src="prep 1.jpg" width="350px" height="400px">
+                 </div>
+
+            </div>
+            <br><br>
+
+                <div id="main-child12" style="display: flex; justify-content: space-evenly;">
+                <div>
+                     <img src="cus1.jpeg" width="350px" height="400">
+                </div>
+                <div>
+                     <img src="coffee in hand.jpg" width="350px" height="400px">
+                </div>
+            <div>
+                 <img src="talk with people.jpg" width="350px" height="400px">
+            </div>
+                 <div>
+                     <img src="coffeeee.webp" width="350px" height="400px">
+                 </div>
+
+            </div>
+
+
+     </div>
+      </div>
+ <br>
+        <div id="nine" style="width: 100%; height: 300px;">
+           
+             <div id="main1">
+            <div id="nine-child1" style="display: flex; justify-content: space-evenly; align-items: center; justify-content: center; margin-top: 100px;" >
+                <div >
+              <a href="#"><img src="clients-img-1.png" ></a>
+                </div>
+                <div>
+                <a href="#"><img src="clients-img-2-hover.png" ></a>
+                </div>
+            <div>
+              <a href="#"><img src="clients-img-3-hover.png"></a>  
+            </div>
+                 <div>
+                 <a href="#"><img src="clients-img-4-hover.png"></a>
+                 </div>
+<div>
+                   <a href="#"><img src="clients-img-5-hover.png"></a>   
+                 </div>
+
+            </div>
+             </div>
+        </div>
     
-  <footer style="background-color: #3B2F2F; color: white; padding: 40px 20px; font-family: Arial, sans-serif;">
+ <footer style="background-color: #3B2F2F; color: white; padding: 40px 20px; font-family: Arial, sans-serif; width: 100%; height: 400px; justify-content: space-around;">
   <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
 
     <!-- Branding -->
     <div style="flex: 1; min-width: 220px;">
       <h2 style="color: #FFD700;">Coffee with Side</h2>
       <p style="font-size: 14px; line-height: 1.6;">
-        A place where every cup is paired with comfort, cookies, and conversation. Come for the coffee, stay for the vibe.
+        A place where every cup is paired with comfort, cookies, and conversation.<br> Come for the coffee, stay for the vibe.
       </p>
     </div>
 <div style="flex: 1; min-width: 200px;">
@@ -244,9 +450,32 @@ style="background-color: #5D3A00; height: 600px; color: white; padding: 40px;">
     </div>
 
   </div>
+<hr>
 
-  <hr style="margin: 30px 0; border-color: #666;">
-  <p style="text-align: center; font-size: 14px;">© 2025 Coffee with Side. All Rights Reserved.</p>
-</footer>
+            <div id="footer">
+                
+                <div>
+                    <p>&copy; All rights reserved</p>
+                </div>
+
+                <div>
+                    <a href="#" style="color: white;">Home</a>
+                    <a href="#" style="color: white;">About</a>
+                    <a href="#" style="color: white;">Shop</a>
+                    <a href="#" style="color: white;">Contact</a>
+                </div>
+
+                <div>
+                    <img src="facebook.png" width="30">
+                    <img src="whatsapp.png" width="30">
+                    <img src="twitter.png" width="30">
+                </div>
+            </div>
+            
+        </footer>
+
+    
+
+       
 </body>
 </html>
